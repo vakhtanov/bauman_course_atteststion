@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Расчет параметров сварки</title>
+</head>
+<body>
+    <b>Прогнозирование глубины и ширины сварочного шва</b>
+    <form action="" method="post">
+        <p>
+	    <label for="IW">Сварочный ток (43-49) A </label>
+	    <input type="text" name="IW">
+        </p>
+        <p>
+	    <label for="IF">Ток фокусировки (131-150) A </label>
+	    <input type="text" name="IF">
+        </p>
+        <p>
+	    <label for="VW">Скорость сварки (4.5-12) mm </label>
+	    <input type="text" name="VW">
+        </p>
+        <p>
+	    <label for="FP">Расстояние до ЭОС (50-125) mm </label>
+	    <input type="text" name="FP">
+        </p>
+	<p>
+	    <input type="submit">
+	</p>
+    </form>
+    <p> Результаты расчета:</p>
+        {% if depth %}
+        <p>Глубина шва {{ depth }} mm</p>
+        <p>Ширина шва {{ width }} mm</p>
+        {% endif %}
+
+
+</body></html>
