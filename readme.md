@@ -8,3 +8,4 @@ https://github.com/vakhtanov/bauman_course_atteststion.git
 .\Flask_app\start.bat
 print(sklearn.__version__) = 1.0.2
 Перед запуском распаковать виртуальное окружение в текущую папку
+или список пакетов в .\Flask_app\requirements.txt
